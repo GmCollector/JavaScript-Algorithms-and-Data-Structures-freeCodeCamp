@@ -1,0 +1,9 @@
+function checkSign(num) 
+{
+  var result = (num === 0) ? "zero"
+  : (num > 0) ? "positive"
+  : "negative"
+  return result;
+}
+
+checkSign(10);
