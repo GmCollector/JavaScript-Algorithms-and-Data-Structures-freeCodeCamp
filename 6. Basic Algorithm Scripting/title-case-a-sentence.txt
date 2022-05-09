@@ -1,0 +1,14 @@
+function titleCase(str) 
+{  
+    var newString = str.toLowerCase()
+    var result = newString.replace(/(^|\s)\S/g, L => L.toUpperCase());
+    return result; 
+    /*
+    This solution works with national symbols 
+    (for example Russian letters) and accented letters.
+    Find all non-whitespace characters (\S) at the beginning of string (^) 
+    or after any whitespace character (\s). g = search entire sentence.   
+    */
+}
+
+titleCase("I'm a little tea pot");
