@@ -1,0 +1,21 @@
+function truncateString(str, num) 
+{
+    var newString = "";
+    
+    for(let i = 0; i < num; i++)
+    {
+        newString+=str[i];
+    }
+    
+    if(num >= str.length)
+    {
+        return str;
+    }
+    else
+    {
+        return newString.concat("...");
+    }
+    
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
