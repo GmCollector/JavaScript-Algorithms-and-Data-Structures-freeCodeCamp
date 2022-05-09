@@ -1,0 +1,11 @@
+function repeatStringNumTimes(str, num) {
+  var newString = "";
+  for(let i = 0; i < num; i++)
+  {
+    newString += str.slice(0,str.length);
+  }
+  console.log(newString);
+  return newString;
+}
+
+repeatStringNumTimes("*", 8);
