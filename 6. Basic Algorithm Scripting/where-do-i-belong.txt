@@ -1,0 +1,10 @@
+function getIndexToIns(arr, num) {
+ 
+    var newArr = arr.concat(num)
+    var result = newArr.sort((a, b) => a - b)
+    console.log(result);
+    return result.indexOf(num);
+    
+}
+
+getIndexToIns([40, 60], 50);
