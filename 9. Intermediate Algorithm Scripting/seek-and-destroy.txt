@@ -1,0 +1,6 @@
+function destroyer(arr, ...checkValue) {
+  console.log(arr.filter(number => !checkValue.includes(number)));
+  return arr.filter(number => !checkValue.includes(number));
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
