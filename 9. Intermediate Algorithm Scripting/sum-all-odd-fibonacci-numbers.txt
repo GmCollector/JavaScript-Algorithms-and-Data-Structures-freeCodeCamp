@@ -1,0 +1,19 @@
+function sumFibs(num) 
+{
+    let firstNumber = 0;
+    let secondNumber = 1;
+    let result=0;
+    while(secondNumber <= num)
+    {
+        if(secondNumber % 2 !== 0)
+        {
+            result += secondNumber;
+        }
+        secondNumber += firstNumber;
+        firstNumber = secondNumber -  firstNumber;
+    }
+    console.log(result);
+    return result;    
+}
+
+sumFibs(4);
