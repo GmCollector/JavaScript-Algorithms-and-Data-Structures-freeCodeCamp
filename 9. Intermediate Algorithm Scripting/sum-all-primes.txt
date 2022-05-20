@@ -1,0 +1,19 @@
+function sumPrimes(num)
+{
+    var sum = num >= 2 ? 2 : 0;
+    for(var i = 3; i <= num; i += 2)
+    {
+        var isPrime = true;
+        for(var j = 3; j < (i/2); j++)
+        {
+            if (i % j === 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        sum += isPrime == true ? i : 0;
+    }
+    return sum;
+}
+sumPrimes(10);
